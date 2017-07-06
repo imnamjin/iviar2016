@@ -113,9 +113,14 @@ table {
 .shadow-separator {
   width: 100%;
   height: 60px;
-  -moz-box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.2); }
+
+.disease-content-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00a4ff;
+  padding-top: 12px;
+  border-top: 3px solid #00a4ff; }
 
 body, html {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -382,6 +387,9 @@ button {
     width: 85%;
     height: auto;
     margin: 0 auto 20px auto; }
+  .cholera-part-01 .disease-section-title {
+    margin-top: 92px;
+    margin-bottom: 6px; }
 
 @media only screen and (max-width: 768px) {
   html, body {

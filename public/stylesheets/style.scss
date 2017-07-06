@@ -184,7 +184,7 @@ button {
     }
 }
 
-.cholera-part-01 {
+.disease-part {
     background: $grey-100;
     padding: 56px 0 67px 0;
 
@@ -193,6 +193,11 @@ button {
         width: 85%;
         height: auto;
         margin: 0 auto 20px auto;
+    }
+
+    .disease-section-title {
+        margin-top: 92px;
+        margin-bottom: 6px;
     }
 }
 
