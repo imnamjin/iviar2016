@@ -1,0 +1,210 @@
+@import "reset";
+@import "variables";
+@import "layout";
+@import "component";
+@import "typography";
+
+body, html {
+    height: 100%;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-part {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("/images/intro-bg-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .slogan {
+        position: absolute;
+        top: 42%;
+        
+        img {
+            width: 488px;
+            height: auto;
+        }
+    }
+
+    .btn-scroll {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: 40px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 59px;
+        margin: 0 auto;
+    }
+
+    .logo-area {
+        padding: 49px 0 0 0;
+
+        .ivi-logo {
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .impact-20-logo {
+            float: right;
+            margin-bottom: 20px;
+        }
+    }
+
+    .logo-area:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.global-nav {
+    display: none;
+}
+
+.annual-letter {
+    width: 100%;
+    min-height: 320px;
+    padding: 54px 0px;
+    box-sizing: border-box;
+    background-image: url("/images/annual-letter-bg@2x-min.png");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .chapter-title-small {
+        margin: 0 auto 36px auto;
+    }
+
+    .btn-basic {
+        background: $purple-500;
+        margin: 11px auto 0 auto;
+    }
+}
+
+.development-part-01 {
+    width: 100%;
+    min-height: 700px;
+    padding: 245px 0 40px 0;
+    box-sizing: border-box;
+    background-image: url("/images/development-delivery-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-subtitle-large {
+        margin-top: 20px;
+    }
+
+    .btn-scroll {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: 40px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+    .intro-part {
+
+        .slogan {
+
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .development-part-01 {
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .intro-part {
+
+        .slogan {
+
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .intro-part {
+
+        .logo-area {
+            .ivi-logo {
+                clear: both;
+            }
+
+            .impact-20-logo {
+                float: left;
+                clear: both;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .intro-part {
+
+        .logo-area {
+
+            .ivi-logo img {
+                width: 200px;
+                height: auto;
+            }
+
+            .impact-20-logo img {
+                width: 74.4px;
+                height: auto;
+            }
+        }
+
+        .btn-scroll {
+            width: 47.2px;
+
+            img {
+                width: 47.2px;
+                height: auto;
+            }
+        }
+
+        .slogan img {
+            width: 250px;
+        }
+    }
+
+    .development-part-01 {
+
+        .chapter-title-large {
+            font-size: $ft-size-8;
+        }
+    }
+}

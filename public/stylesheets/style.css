@@ -1,0 +1,318 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.row-default {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.row-620px {
+  max-width: 620px; }
+
+.row-735px {
+  max-width: 735px; }
+
+.btn-basic {
+  display: block;
+  padding: 12px 35px 16px 35px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: 10px; }
+  .btn-basic .material-icons {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle; }
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45em;
+  color: #333333; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+.text-link {
+  color: #00a4ff;
+  text-decoration: underline; }
+
+.text-strong {
+  font-weight: 600; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-purple-900 {
+  color: #141c84; }
+
+.img-caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #9b9b9b; }
+
+.disease-section-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.11em;
+  color: #141c84; }
+
+.disease-section-subtitle {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: #141c84;
+  line-height: 1.4em; }
+
+.disease-nav-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #141c84;
+  text-align: center; }
+
+.disease-nav-desc {
+  font-size: 14px;
+  line-height: 1.36em;
+  text-align: center; }
+
+.chapter-link-caption {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff; }
+
+.chapter-title-xlarge {
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-align: center;
+  color: #00b1ef; }
+
+.chapter-title-large {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-align: center;
+  color: #00b1ef; }
+
+.chapter-title-medium {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.36em;
+  text-align: center;
+  color: #ffffff; }
+
+.chapter-title-small {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.36em;
+  text-align: center;
+  color: #7178d4; }
+
+.chapter-subtitle-large {
+  font-size: 24px;
+  line-height: 1.375em;
+  text-align: center;
+  color: #ffffff; }
+
+.chapter-subtitle-medium {
+  font-size: 22px;
+  line-height: 1.363em;
+  text-align: center;
+  color: #ffffff; }
+
+.chapter-subtitle-small {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.56em;
+  text-align: center;
+  color: #ffffff; }
+
+.chapter-subtitle-xsmall {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #00a4ff; }
+
+body, html {
+  height: 100%; }
+
+button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0; }
+
+.intro-part {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("/images/intro-bg-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .intro-part .slogan {
+    position: absolute;
+    top: 42%; }
+    .intro-part .slogan img {
+      width: 488px;
+      height: auto; }
+  .intro-part .btn-scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59px;
+    margin: 0 auto; }
+  .intro-part .logo-area {
+    padding: 49px 0 0 0; }
+    .intro-part .logo-area .ivi-logo {
+      float: left;
+      margin-bottom: 20px; }
+    .intro-part .logo-area .impact-20-logo {
+      float: right;
+      margin-bottom: 20px; }
+  .intro-part .logo-area:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.global-nav {
+  display: none; }
+
+.annual-letter {
+  width: 100%;
+  min-height: 320px;
+  padding: 54px 0px;
+  box-sizing: border-box;
+  background-image: url("/images/annual-letter-bg@2x-min.png");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .annual-letter .chapter-title-small {
+    margin: 0 auto 36px auto; }
+  .annual-letter .btn-basic {
+    background: #272f9e;
+    margin: 11px auto 0 auto; }
+
+.development-part-01 {
+  width: 100%;
+  min-height: 700px;
+  padding: 245px 0 40px 0;
+  box-sizing: border-box;
+  background-image: url("/images/development-delivery-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .development-part-01 .chapter-subtitle-large {
+    margin-top: 20px; }
+  .development-part-01 .btn-scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin: 0 auto; }
+
+@media only screen and (max-width: 650px) {
+  .intro-part .slogan img {
+    width: 400px; } }
+
+@media only screen and (max-width: 540px) {
+  .development-part-01 {
+    padding-top: 150px; } }
+
+@media only screen and (max-width: 500px) {
+  .intro-part .slogan img {
+    width: 300px; } }
+
+@media only screen and (max-width: 450px) {
+  .intro-part .logo-area .ivi-logo {
+    clear: both; }
+  .intro-part .logo-area .impact-20-logo {
+    float: left;
+    clear: both; } }
+
+@media only screen and (max-width: 320px) {
+  .intro-part .logo-area .ivi-logo img {
+    width: 200px;
+    height: auto; }
+  .intro-part .logo-area .impact-20-logo img {
+    width: 74.4px;
+    height: auto; }
+  .intro-part .btn-scroll {
+    width: 47.2px; }
+    .intro-part .btn-scroll img {
+      width: 47.2px;
+      height: auto; }
+  .intro-part .slogan img {
+    width: 250px; }
+  .development-part-01 .chapter-title-large {
+    font-size: 38px; } }
+
+/*# sourceMappingURL=style.css.map */

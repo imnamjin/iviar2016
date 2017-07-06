@@ -1,0 +1,149 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: $ft-size-1;
+    font-weight: 400;
+    line-height: 1.45em;
+    color: $grey-900;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.text-link {
+    color: $cyan-400;
+    text-decoration: underline;
+}
+
+.text-strong {
+    font-weight: 600;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-purple-900 {
+    color: $purple-900;
+}
+
+.img-caption {
+    font-size: $ft-size-0;
+    font-style: italic;
+    color: $grey-500;
+}
+
+.disease-section-title {
+    font-size: $ft-size-8;
+	font-weight: 700;
+	line-height: 1.11em;
+	color: $purple-900;
+}
+
+.disease-section-subtitle {
+    font-size: $ft-size-4;
+	font-weight: 300;
+	font-style: italic;
+    color: $purple-900;
+    line-height: 1.4em;
+}
+
+.disease-nav-title {
+    font-size: $ft-size-3;
+    font-weight: 700;
+    color: $purple-900;
+    text-align: center;
+}
+
+.disease-nav-desc {
+    font-size: $ft-size-0;
+    line-height: 1.36em;
+    text-align: center;
+}
+
+.chapter-link-caption {
+    font-size: $ft-size-1;
+    font-weight: 300;
+    text-align: center;
+    color: $white;
+}
+
+.chapter-title-xlarge {
+    font-size: $ft-size-10;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+    color: $lightblue-500;
+}
+
+.chapter-title-large {
+    font-size: $ft-size-9;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+    color: $lightblue-500;
+}
+
+.chapter-title-medium {
+    font-size: $ft-size-7;
+    font-weight: 300;
+    line-height: 1.36em;
+    text-align: center;
+    color: $white;
+}
+
+.chapter-title-small {
+    font-size: $ft-size-6;
+    font-weight: 300;
+    line-height: 1.36em;
+    text-align: center;
+    color: $purple-300;
+}
+
+.chapter-subtitle-large {
+    font-size: $ft-size-5;
+    line-height: 1.375em;
+    text-align: center;
+    color: $white;
+}
+
+.chapter-subtitle-medium {
+    font-size: $ft-size-4;
+    line-height: 1.363em;
+    text-align: center;
+    color: $white;
+}
+
+.chapter-subtitle-small {
+    font-size: $ft-size-2;
+    font-weight: 300;
+    line-height: 1.56em;
+    text-align: center;
+    color: $white;
+}
+
+.chapter-subtitle-xsmall {
+    font-size: $ft-size-1;
+    font-weight: 300;
+    text-align: center;
+    color: $cyan-400;
+}
