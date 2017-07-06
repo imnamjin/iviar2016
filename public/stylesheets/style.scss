@@ -122,7 +122,11 @@ button {
 
 
 
-
+@media only screen and (max-width: 768px) {
+    html, body {
+        font-size: 14px;
+    }
+}
 
 
 @media only screen and (max-width: 650px) {
@@ -198,13 +202,6 @@ button {
 
         .slogan img {
             width: 250px;
-        }
-    }
-
-    .development-part-01 {
-
-        .chapter-title-large {
-            font-size: $ft-size-8;
         }
     }
 }

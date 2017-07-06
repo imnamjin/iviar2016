@@ -56,15 +56,15 @@ table {
   display: block;
   padding: 12px 35px 16px 35px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   vertical-align: 10px; }
   .btn-basic .material-icons {
     margin-right: 5px;
-    font-size: 18px;
+    font-size: 1.125rem;
     vertical-align: middle; }
 
-body {
+body, html {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -104,89 +104,89 @@ body {
   color: #141c84; }
 
 .img-caption {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: italic;
   color: #9b9b9b; }
 
 .disease-section-title {
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
   line-height: 1.11em;
   color: #141c84; }
 
 .disease-section-subtitle {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 300;
   font-style: italic;
   color: #141c84;
   line-height: 1.4em; }
 
 .disease-nav-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #141c84;
   text-align: center; }
 
 .disease-nav-desc {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.36em;
   text-align: center; }
 
 .chapter-link-caption {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-align: center;
   color: #ffffff; }
 
 .chapter-title-xlarge {
-  font-size: 90px;
+  font-size: 5.625rem;
   font-weight: 300;
   line-height: 1.2em;
   text-align: center;
   color: #00b1ef; }
 
 .chapter-title-large {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 300;
   line-height: 1.2em;
   text-align: center;
   color: #00b1ef; }
 
 .chapter-title-medium {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.36em;
   text-align: center;
   color: #ffffff; }
 
 .chapter-title-small {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 300;
   line-height: 1.36em;
   text-align: center;
   color: #7178d4; }
 
 .chapter-subtitle-large {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.375em;
   text-align: center;
   color: #ffffff; }
 
 .chapter-subtitle-medium {
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.363em;
   text-align: center;
   color: #ffffff; }
 
 .chapter-subtitle-small {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.56em;
   text-align: center;
   color: #ffffff; }
 
 .chapter-subtitle-xsmall {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-align: center;
   color: #00a4ff; }
@@ -279,6 +279,10 @@ button {
     width: 100px;
     margin: 0 auto; }
 
+@media only screen and (max-width: 768px) {
+  html, body {
+    font-size: 14px; } }
+
 @media only screen and (max-width: 650px) {
   .intro-part .slogan img {
     width: 400px; } }
@@ -311,8 +315,6 @@ button {
       width: 47.2px;
       height: auto; }
   .intro-part .slogan img {
-    width: 250px; }
-  .development-part-01 .chapter-title-large {
-    font-size: 38px; } }
+    width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
