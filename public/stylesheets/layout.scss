@@ -4,10 +4,48 @@
     padding: 0 20px;
 }
 
+.row-default:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .row-620px {
     max-width: 620px;
 }
 
 .row-735px {
     max-width: 735px;
+}
+
+.col-1_2 {
+    width: 48.64%;
+    float: left;
+}
+
+.col-1_3 {
+    width: 31.52%;
+    float: left;
+}
+
+.col-2_3 {
+    width: 65.76%;
+    float: left;
+}
+
+.col-right-space {
+    margin-right: 2.72%;
+}
+
+.colincol-1_2 {
+    width: 47.2%;
+    float: left;
+}
+
+.colincol-right-space {
+    margin-right: 5.6%;
+}
+
+.margin-bottom-100px {
+    margin-bottom: 100px;
 }

@@ -44,6 +44,11 @@ button {
         margin-right:auto;
         width: 59px;
         margin: 0 auto;
+
+        img {
+            width: 59px;
+            height: auto;
+        }
     }
 
     .logo-area {
@@ -52,11 +57,21 @@ button {
         .ivi-logo {
             float: left;
             margin-bottom: 20px;
+
+            img {
+                width: 250px;
+                height: auto;
+            }
         }
 
         .impact-20-logo {
             float: right;
             margin-bottom: 20px;
+
+            img {
+                width: 93px;
+                height: auto;
+            }
         }
     }
 
@@ -117,14 +132,113 @@ button {
         margin-right:auto;
         width: 100px;
         margin: 0 auto;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
     }
 }
+
+.development-part-02 {
+
+    .content {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .number-box {
+        margin-bottom: 20px;
+    }
+}
+
+.development-part-03 {
+
+    .section-nav {
+
+        .thumb {
+            display: block;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 23px auto;
+        }
+
+        .disease-nav-title {
+            margin-bottom: 5px;
+        }
+
+        .disease-nav-desc {
+            min-height: 120px;
+        }
+
+        .btn-scroll {
+            display: block;
+            width: 46px;
+            margin: 0 auto 40px auto;
+
+            img {
+                width: 46px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.cholera-part-01 {
+    background: $grey-100;
+    padding: 56px 0 67px 0;
+
+    .cholera-main-img {
+        display: block;
+        width: 85%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+}
+
+
+
 
 
 
 @media only screen and (max-width: 768px) {
     html, body {
         font-size: 14px;
+    }
+
+    .col-1_2, .col-1_3, .col-2_3 {
+        width: 100%;
+    }
+
+    .col-right-space {
+        margin-right: 0;
+    }
+
+    .row-default {
+        padding: 0 15px;
+    }
+
+    .development-part-03 {
+
+        .section-nav {
+
+            .thumb {
+                width: 130px;
+                height: 130px;
+            }
+
+            .btn-scroll {
+                display: block;
+                width: 38px;
+                height: 38px;
+                margin: 0 auto 40px auto;
+
+                img {
+                    width: 38px;
+                    height: 38px;
+                }
+            }
+        }
     }
 }
 
