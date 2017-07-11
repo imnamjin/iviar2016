@@ -184,7 +184,103 @@ button {
     }
 }
 
+.capacity-building-contentpage {
+    padding-top: 67px;
+    padding-bottom: 40px;
 
+    .card-title-box {
+        margin-bottom: 20px;
+    }
+
+    .number-box {
+        margin-bottom: 30px;
+    }
+}
+
+.capacity-building-titlepage {
+    width: 100%;
+    min-height: 700px;
+    padding: 245px 0 40px 0;
+    box-sizing: border-box;
+    background-image: url("/images/capacity-building-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-subtitle-large {
+        margin-top: 20px;
+    }
+
+    .btn-scroll {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: 40px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100px;
+        margin: 0 auto;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+}
+
+.impact-titlepage {
+    width: 100%;
+    padding: 112px 0 110px 0;
+    box-sizing: border-box;
+    background-image: url("/images/impact-bg-01@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-title-xlarge {
+        margin-bottom: 11px;
+    }
+
+    .chapter-subtitle-medium {
+        margin-bottom: 40px;
+    }
+
+    .btn-basic {
+        background: $lightblue-500;
+        margin: 11px auto 0 auto;
+    }
+
+    .number-box {
+        min-height: 172px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .chapter-link-caption {
+        margin-top: 50px;
+    }
+}
+
+.impact-contentpage {
+    width: 100%;
+    padding: 47px 0 53px 0;
+    box-sizing: border-box;
+    background-image: url("/images/impact-bg-02@2x-min.png");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-title-medium {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+}
 
 
 
@@ -194,11 +290,11 @@ button {
         font-size: 14px;
     }
 
-    .col-1_2, .col-1_3, .col-2_3 {
+    .col-1_2, .col-1_3, .col-2_3, .col-impact-1_2 {
         width: 100%;
     }
 
-    .col-right-space {
+    .col-right-space, .col-impact-right-space {
         margin-right: 0;
     }
 
@@ -213,6 +309,12 @@ button {
 
     .disease-main-img {
         width: 50%;
+    }
+
+    .impact-titlepage {
+        .number-box {
+            min-height: 0;
+        }
     }
 
     .development-part-03 {
@@ -238,7 +340,6 @@ button {
         }
     }
 }
-
 
 @media only screen and (max-width: 650px) {
     .intro-part {
@@ -317,39 +418,6 @@ button {
 
         .slogan img {
             width: 250px;
-        }
-    }
-}
-
-.capacity-building-titlepage {
-    width: 100%;
-    min-height: 700px;
-    padding: 245px 0 40px 0;
-    box-sizing: border-box;
-    background-image: url("/images/capacity-building-bg@2x-min.jpg");
-    background-color: $purple-900;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-
-    .chapter-subtitle-large {
-        margin-top: 20px;
-    }
-
-    .btn-scroll {
-        position: absolute;
-        left:0;
-        right:0;
-        bottom: 40px;
-        margin-left:auto;
-        margin-right:auto;
-        width: 100px;
-        margin: 0 auto;
-
-        img {
-            width: 100px;
-            height: auto;
         }
     }
 }

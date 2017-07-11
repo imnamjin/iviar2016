@@ -22,7 +22,6 @@
         font-size: $ft-size-9;
         font-weight: 300;
         line-height: 1.45em;
-        color: $cyan-400;
         margin-bottom: 5px;
     }
 
@@ -75,15 +74,28 @@
 
 .card-title-box {
     width: 100%;
-    min-height: 257px;
+    min-height: 230px;
     padding: 17px 23px;
     box-sizing: border-box;
     border-top-width: 4px;
     border-top-style: solid;
+    position: relative;
 }
 
 .card-title {
     color: $white;
     font-size: $ft-size-4;
     line-height: 1.4em;
+}
+
+.card-icon {
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+}
+
+.card-icon-rightfit {
+    position: absolute;
+    right: 0px;
+    bottom: 24px;
 }

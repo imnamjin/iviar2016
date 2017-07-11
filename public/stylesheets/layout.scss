@@ -14,8 +14,16 @@
     max-width: 620px;
 }
 
+.row-724px {
+    max-width: 724px;
+}
+
 .row-735px {
     max-width: 735px;
+}
+
+.row-920px {
+    max-width: 920px;
 }
 
 .col-1_2 {
@@ -44,6 +52,15 @@
 
 .colincol-right-space {
     margin-right: 5.6%;
+}
+
+.col-impact-1_2 {
+    width: 47.9%;
+    float: left;
+}
+
+.col-impact-right-space {
+    margin-right: 4.2%;
 }
 
 .margin-bottom-10px {
@@ -98,8 +115,28 @@
     background-color: $lightblue-400;
 }
 
+.bg-purple-900 {
+    background-color: $purple-900;
+}
+
+.bg-deepblue-300 {
+    background-color: $deepblue-300;
+}
+
+.bg-cyan-500 {
+    background-color: $cyan-500;
+}
+
 .border-top-lightblue-200 {
     border-top-color: $lightblue-200;
+}
+
+.border-top-cyan-200 {
+    border-top-color: $cyan-200;
+}
+
+.border-top-blue-200 {
+    border-top-color: $blue-200;
 }
 
 .img-box {
