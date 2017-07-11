@@ -115,6 +115,36 @@ table {
 .bg-less-lightgrey {
   background: #eaeaea; }
 
+.bg-lightblue-400 {
+  background-color: #00cefc; }
+
+.border-top-lightblue-200 {
+  border-top-color: #b6eeff; }
+
+.img-box {
+  width: 100%; }
+
+.img-caption {
+  margin-bottom: 30px; }
+
+.disease-part {
+  padding: 56px 0 67px 0; }
+  .disease-part .number-box {
+    margin-bottom: 20px; }
+
+.disease-section-title {
+  margin-top: 92px;
+  margin-bottom: 6px; }
+
+.disease-main-img {
+  display: block;
+  width: 85%;
+  height: auto;
+  margin: 0 auto 20px auto; }
+
+.disease-content {
+  margin-bottom: 25px; }
+
 .btn-basic {
   display: block;
   padding: 12px 35px 16px 35px;
@@ -173,6 +203,19 @@ table {
     color: #141c84;
     margin: 10px 0 13px 0; }
 
+.card-title-box {
+  width: 100%;
+  min-height: 257px;
+  padding: 17px 23px;
+  box-sizing: border-box;
+  border-top-width: 4px;
+  border-top-style: solid; }
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.375rem;
+  line-height: 1.4em; }
+
 body, html {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
@@ -214,6 +257,9 @@ body, html {
 
 .text-cyan-400 {
   color: #00a4ff; }
+
+.text-lightblue-400 {
+  color: #00cefc; }
 
 .img-caption {
   font-size: 0.875rem;
@@ -432,30 +478,6 @@ button {
     width: 46px;
     height: auto; }
 
-.img-box {
-  width: 100%; }
-
-.img-caption {
-  margin-bottom: 30px; }
-
-.disease-part {
-  padding: 56px 0 67px 0; }
-  .disease-part .number-box {
-    margin-bottom: 20px; }
-
-.disease-section-title {
-  margin-top: 92px;
-  margin-bottom: 6px; }
-
-.disease-main-img {
-  display: block;
-  width: 85%;
-  height: auto;
-  margin: 0 auto 20px auto; }
-
-.disease-content {
-  margin-bottom: 25px; }
-
 @media only screen and (max-width: 768px) {
   html, body {
     font-size: 14px; }
@@ -517,5 +539,31 @@ button {
       height: auto; }
   .intro-part .slogan img {
     width: 250px; } }
+
+.capacity-building-titlepage {
+  width: 100%;
+  min-height: 700px;
+  padding: 245px 0 40px 0;
+  box-sizing: border-box;
+  background-image: url("/images/capacity-building-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .capacity-building-titlepage .chapter-subtitle-large {
+    margin-top: 20px; }
+  .capacity-building-titlepage .btn-scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin: 0 auto; }
+    .capacity-building-titlepage .btn-scroll img {
+      width: 100px;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */

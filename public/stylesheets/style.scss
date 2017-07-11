@@ -184,38 +184,6 @@ button {
     }
 }
 
-.img-box {
-    width: 100%;
-}
-
-.img-caption {
-    margin-bottom: 30px;
-}
-
-.disease-part {
-    padding: 56px 0 67px 0;
-
-    .number-box {
-        margin-bottom: 20px;
-    }
-}
-
-.disease-section-title {
-    margin-top: 92px;
-    margin-bottom: 6px;
-}
-
-.disease-main-img {
-    display: block;
-    width: 85%;
-    height: auto;
-    margin: 0 auto 20px auto;
-}
-
-.disease-content {
-    margin-bottom: 25px;
-}
-
 
 
 
@@ -349,6 +317,39 @@ button {
 
         .slogan img {
             width: 250px;
+        }
+    }
+}
+
+.capacity-building-titlepage {
+    width: 100%;
+    min-height: 700px;
+    padding: 245px 0 40px 0;
+    box-sizing: border-box;
+    background-image: url("/images/capacity-building-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-subtitle-large {
+        margin-top: 20px;
+    }
+
+    .btn-scroll {
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: 40px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 100px;
+        margin: 0 auto;
+
+        img {
+            width: 100px;
+            height: auto;
         }
     }
 }

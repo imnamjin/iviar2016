@@ -72,3 +72,18 @@
         margin: 10px 0 13px 0;
     }
 }
+
+.card-title-box {
+    width: 100%;
+    min-height: 257px;
+    padding: 17px 23px;
+    box-sizing: border-box;
+    border-top-width: 4px;
+    border-top-style: solid;
+}
+
+.card-title {
+    color: $white;
+    font-size: $ft-size-4;
+    line-height: 1.4em;
+}
