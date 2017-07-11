@@ -184,21 +184,36 @@ button {
     }
 }
 
+.img-box {
+    width: 100%;
+}
+
+.img-caption {
+    margin-bottom: 30px;
+}
+
 .disease-part {
-    background: $grey-100;
     padding: 56px 0 67px 0;
 
-    .cholera-main-img {
-        display: block;
-        width: 85%;
-        height: auto;
-        margin: 0 auto 20px auto;
+    .number-box {
+        margin-bottom: 20px;
     }
+}
 
-    .disease-section-title {
-        margin-top: 92px;
-        margin-bottom: 6px;
-    }
+.disease-section-title {
+    margin-top: 92px;
+    margin-bottom: 6px;
+}
+
+.disease-main-img {
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
+.disease-content {
+    margin-bottom: 25px;
 }
 
 
@@ -221,6 +236,15 @@ button {
 
     .row-default {
         padding: 0 15px;
+    }
+
+    .disease-section-title {
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .disease-main-img {
+        width: 50%;
     }
 
     .development-part-03 {
@@ -279,6 +303,10 @@ button {
 }
 
 @media only screen and (max-width: 450px) {
+    .disease-main-img {
+        width: 65%;
+    }
+
     .intro-part {
 
         .logo-area {

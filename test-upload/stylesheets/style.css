@@ -318,7 +318,7 @@ button {
   width: 100%;
   height: 100%;
   position: relative;
-  background-image: url("/images/intro-bg-min.jpg");
+  background-image: url("/artest/images/intro-bg-min.jpg");
   background-color: #141c84;
   background-size: cover;
   background-position: center;
@@ -368,7 +368,7 @@ button {
   min-height: 320px;
   padding: 54px 0px;
   box-sizing: border-box;
-  background-image: url("/images/annual-letter-bg@2x-min.png");
+  background-image: url("/artest/images/annual-letter-bg@2x-min.png");
   background-color: #141c84;
   background-size: cover;
   background-position: center;
@@ -384,7 +384,7 @@ button {
   min-height: 700px;
   padding: 245px 0 40px 0;
   box-sizing: border-box;
-  background-image: url("/images/development-delivery-bg@2x-min.jpg");
+  background-image: url("/artest/images/development-delivery-bg@2x-min.jpg");
   background-color: #141c84;
   background-size: cover;
   background-position: center;
