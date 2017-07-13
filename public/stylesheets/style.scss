@@ -3,6 +3,7 @@
 @import "layout";
 @import "component";
 @import "typography";
+@import "nav";
 
 body, html {
     height: 100%;
@@ -80,10 +81,6 @@ button {
         display: table;
         clear: both;
     }
-}
-
-.global-nav {
-    display: none;
 }
 
 .annual-letter {
@@ -282,19 +279,211 @@ button {
     }
 }
 
+.partners-titlepage {
+    width: 100%;
+    padding: 112px 0 110px 0;
+    box-sizing: border-box;
+    background-image: url("/images/partners-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-title-large {
+        margin-bottom: 20px;
+    }
+
+    .chapter-subtitle-large {
+        margin-bottom: 70px;
+    }
+
+    .btn-basic {
+        margin: 0 auto 0 auto;
+    }
+}
+
+.donors-titlepage {
+    width: 100%;
+    padding: 147px 0 178px 0;
+    box-sizing: border-box;
+    background-image: url("/images/donors-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .chapter-title-large {
+        margin-bottom: 27px;
+    }
+
+    .chapter-subtitle-small {
+        margin-bottom: 62px;
+    }
+
+    .btn-basic {
+        margin: 0 auto 0 auto;
+    }
+}
+
+.donors-contentpage {
+    padding-top: 63px;
+    padding-bottom: 63px;
+    background-color: $grey-100;
+
+    .number-box {
+        margin-bottom: 30px;
+    }
+}
+
+.leadership-titlepage {
+    width: 100%;
+    padding: 118px 0 123px 0;
+    box-sizing: border-box;
+    background-image: url("/images/leadership-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .chapter-title-large {
+        margin-bottom: 27px;
+    }
+
+    .chapter-subtitle-small {
+        margin-bottom: 62px;
+    }
+
+    .btn-basic {
+        margin: 0 auto 0 auto;
+    }
+}
+
+.finances-titlepage {
+    width: 100%;
+    padding: 77px 0 200px 0;
+    box-sizing: border-box;
+    background-image: url("/images/finances-bg@2x-min.jpg");
+    background-color: $purple-900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .chapter-title-large {
+        margin-bottom: 0;
+    }
+
+    .chapter-subtitle-xsmall {
+        margin-bottom: 70px;
+    }
+}
+
+.footer {
+    background-color: $purple-900;
+}
+
+.copyright {
+    font-size: $ft-size-0;
+    color: $white;
+    margin: 20px 0;
+}
+
+.footer-logo {
+    display: block;
+    width: 170px;
+    float: left;
+    margin: 20px 0;
+}
+
+.donation-link {
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 89px;
+    background-color: #f98200;
+    float: right;
+    font-size: $ft-size-2;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+    padding-top: 11px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 20px 0;
+}
 
 
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .col-60, .col-20 {
+        width: 100%;
+    }
+
+    .footer-logo {
+        float: left;
+    }
+
+    .col-20:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     html, body {
         font-size: 14px;
     }
 
-    .col-1_2, .col-1_3, .col-2_3, .col-impact-1_2 {
+    .col-1_2, .col-1_3, .col-2_3, .col-impact-1_2, .col-leadership-1_3, .col-45 {
         width: 100%;
     }
 
-    .col-right-space, .col-impact-right-space {
+    .col-right-space, .col-impact-right-space, .col-leadership-right-space, .col-45-right-space {
         margin-right: 0;
     }
 
@@ -338,6 +527,10 @@ button {
                 }
             }
         }
+    }
+
+    .finances-piechart {
+        margin: 30px auto 0 auto;
     }
 }
 

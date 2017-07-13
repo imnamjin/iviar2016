@@ -1,0 +1,44 @@
+.global-nav {
+    background-color: $blue-400;
+
+    .row-default {
+        border: 1px solid $blue-500;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .menu-bar {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .menu {
+        display: block;
+        float: left;
+        width: 12.8%;
+        height: 78px;
+        background: url('/images/menu-bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: $blue-400;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-last {
+        display: block;
+        float: left;
+        width: 10.4%;
+        height: 78px;
+        background-color: $blue-400;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+}
+

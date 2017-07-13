@@ -60,6 +60,9 @@ table {
 .row-735px {
   max-width: 735px; }
 
+.row-800px {
+  max-width: 800px; }
+
 .row-920px {
   max-width: 920px; }
 
@@ -89,8 +92,35 @@ table {
   width: 47.9%;
   float: left; }
 
+.col-leadership-1_3 {
+  width: 32.73%;
+  float: left; }
+
+.col-60 {
+  width: 60%;
+  float: left; }
+
+.col-45 {
+  width: 45%;
+  float: left; }
+
+.col-35 {
+  width: 35%; }
+
+.col-65 {
+  width: 65%; }
+
+.col-45-right-space {
+  margin-right: 10%; }
+
+.col-leadership-right-space {
+  margin-right: 0.905%; }
+
 .col-impact-right-space {
   margin-right: 4.2%; }
+
+.margin-bottom-0px {
+  margin-bottom: 0; }
 
 .margin-bottom-10px {
   margin-bottom: 10px; }
@@ -122,14 +152,35 @@ table {
 .margin-bottom-100px {
   margin-bottom: 100px; }
 
+.padding-left-10px {
+  padding-left: 10px; }
+
+.padding-left-20px {
+  padding-left: 20px; }
+
+.padding-top-23px {
+  padding-top: 23px; }
+
+.padding-top-13px {
+  padding-top: 13px; }
+
 .bg-lightgrey {
   background: #f2f2f2; }
 
 .bg-less-lightgrey {
   background: #eaeaea; }
 
+.bg-lightblue-450 {
+  background-color: #20C9FF; }
+
 .bg-lightblue-400 {
   background-color: #00cefc; }
+
+.bg-lightblue-300 {
+  background-color: #9deeff; }
+
+.bg-lightblue-200 {
+  background-color: #b6eeff; }
 
 .bg-purple-900 {
   background-color: #141c84; }
@@ -137,17 +188,38 @@ table {
 .bg-deepblue-300 {
   background-color: #00a3fe; }
 
+.bg-deepblue-500 {
+  background-color: #008bd9; }
+
+.bg-deepblue-600 {
+  background-color: #00649f; }
+
+.bg-deepblue-700 {
+  background-color: #00436d; }
+
 .bg-cyan-500 {
   background-color: #2071ff; }
 
-.border-top-lightblue-200 {
-  border-top-color: #b6eeff; }
+.bg-teal-300 {
+  background-color: #24dbae; }
 
 .border-top-cyan-200 {
   border-top-color: #b4e4ff; }
 
+.border-top-cyan-400 {
+  border-top-color: #00a4ff; }
+
 .border-top-blue-200 {
   border-top-color: #91c1ff; }
+
+.border-top-lightblue-450 {
+  border-top-color: #20C9FF; }
+
+.border-top-lightblue-300 {
+  border-top-color: #9deeff; }
+
+.border-top-lightblue-200 {
+  border-top-color: #b6eeff; }
 
 .img-box {
   width: 100%; }
@@ -172,6 +244,12 @@ table {
 
 .disease-content {
   margin-bottom: 25px; }
+
+.width-60 {
+  width: 60%; }
+
+.width-20 {
+  width: 20%; }
 
 .btn-basic {
   display: block;
@@ -210,12 +288,12 @@ table {
   height: 60px;
   box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.2); }
 
-.disease-content-title {
+.content-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #00a4ff;
   padding-top: 12px;
-  border-top: 3px solid #00a4ff;
+  border-top-width: 3px;
+  border-top-style: solid;
   margin-bottom: 40px; }
 
 .special-quote {
@@ -253,6 +331,155 @@ table {
   position: absolute;
   right: 0px;
   bottom: 24px; }
+
+.leadership-thumb {
+  width: 100%;
+  display: block; }
+
+.leadership-info {
+  background-color: #0055a0;
+  padding: 8px 16px;
+  min-height: 85px;
+  box-sizing: border-box;
+  margin-bottom: 10px; }
+
+.leadership-name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.44em;
+  color: #ffffff; }
+
+.leadership-desc {
+  font-size: 0.875rem;
+  line-height: 1.64em;
+  color: #67b8ff; }
+
+.finances-box {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.22);
+  padding: 35px 20px 20px 20px;
+  margin-bottom: 20px; }
+
+.finances-table {
+  width: 100%; }
+  .finances-table th {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #00a4ff;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #00a4ff; }
+  .finances-table td {
+    font-size: 0.875rem;
+    padding-top: 10px; }
+
+.finances-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #00a4ff;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #00a4ff; }
+
+.finances-piechart-box {
+  width: 100%; }
+
+.finances-piechart-box:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.finances-piechart {
+  display: block;
+  width: 100%;
+  max-width: 268px;
+  margin: 40px auto 0 auto; }
+
+.finances-piechart-desc {
+  font-size: 0.875rem;
+  line-height: 1.93em;
+  margin-top: 30px; }
+
+.oval-glyph {
+  display: inline-block;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-deepblue-300:before {
+  content: "";
+  display: inline-block;
+  background-color: #00a3fe;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-deepblue-500:before {
+  content: "";
+  display: inline-block;
+  background-color: #008bd9;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-deepblue-600:before {
+  content: "";
+  display: inline-block;
+  background-color: #00649f;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-deepblue-700:before {
+  content: "";
+  display: inline-block;
+  background-color: #00436d;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-lightblue-400:before {
+  content: "";
+  display: inline-block;
+  background-color: #00cefc;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.oval-glyph-lightblue-300:before {
+  content: "";
+  display: inline-block;
+  background-color: #9deeff;
+  margin-right: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px; }
+
+.disease-table {
+  background-color: #ffffff;
+  width: 100%;
+  font-size: 0.875rem;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px; }
+  .disease-table th {
+    border: 1px solid #007ae3; }
+  .disease-table td {
+    border: 1px solid #e0e0e0; }
+  .disease-table th, .disease-table .td-1 {
+    padding: 10px 15px; }
+  .disease-table .td-2 {
+    padding: 10px 15px 10px 30px; }
+  .disease-table th {
+    background-color: #0089ff;
+    color: #ffffff;
+    font-size: 1rem; }
+  .disease-table ul {
+    list-style-type: disc;
+    list-style-position: outside; }
 
 body, html {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -302,8 +529,14 @@ body, html {
 .text-lightblue-400 {
   color: #00cefc; }
 
+.text-lightblue-450 {
+  color: #20C9FF; }
+
 .text-lightblue-500 {
   color: #00b1ef; }
+
+.text-teal-300 {
+  color: #24dbae; }
 
 .text-white {
   color: #ffffff; }
@@ -356,8 +589,7 @@ body, html {
   font-size: 3.125rem;
   font-weight: 300;
   line-height: 1.2em;
-  text-align: center;
-  color: #00b1ef; }
+  text-align: center; }
 
 .chapter-title-medium {
   font-size: 2rem;
@@ -397,6 +629,47 @@ body, html {
   font-weight: 300;
   text-align: center;
   color: #00a4ff; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.global-nav {
+  background-color: #047ce4; }
+  .global-nav .row-default {
+    border: 1px solid #006ac7;
+    box-sizing: border-box;
+    padding: 0; }
+  .global-nav .menu-bar {
+    width: 100%;
+    font-size: 15px; }
+  .global-nav .menu {
+    display: block;
+    float: left;
+    width: 12.8%;
+    height: 78px;
+    background: url("/images/menu-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #047ce4;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-last {
+    display: block;
+    float: left;
+    width: 10.4%;
+    height: 78px;
+    background-color: #047ce4;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
 
 body, html {
   height: 100%; }
@@ -452,9 +725,6 @@ button {
     content: "";
     display: table;
     clear: both; }
-
-.global-nav {
-  display: none; }
 
 .annual-letter {
   width: 100%;
@@ -597,12 +867,147 @@ button {
     text-align: left;
     margin-bottom: 24px; }
 
+.partners-titlepage {
+  width: 100%;
+  padding: 112px 0 110px 0;
+  box-sizing: border-box;
+  background-image: url("/images/partners-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .partners-titlepage .chapter-title-large {
+    margin-bottom: 20px; }
+  .partners-titlepage .chapter-subtitle-large {
+    margin-bottom: 70px; }
+  .partners-titlepage .btn-basic {
+    margin: 0 auto 0 auto; }
+
+.donors-titlepage {
+  width: 100%;
+  padding: 147px 0 178px 0;
+  box-sizing: border-box;
+  background-image: url("/images/donors-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .donors-titlepage .chapter-title-large {
+    margin-bottom: 27px; }
+  .donors-titlepage .chapter-subtitle-small {
+    margin-bottom: 62px; }
+  .donors-titlepage .btn-basic {
+    margin: 0 auto 0 auto; }
+
+.donors-contentpage {
+  padding-top: 63px;
+  padding-bottom: 63px;
+  background-color: #f2f2f2; }
+  .donors-contentpage .number-box {
+    margin-bottom: 30px; }
+
+.leadership-titlepage {
+  width: 100%;
+  padding: 118px 0 123px 0;
+  box-sizing: border-box;
+  background-image: url("/images/leadership-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .leadership-titlepage .chapter-title-large {
+    margin-bottom: 27px; }
+  .leadership-titlepage .chapter-subtitle-small {
+    margin-bottom: 62px; }
+  .leadership-titlepage .btn-basic {
+    margin: 0 auto 0 auto; }
+
+.finances-titlepage {
+  width: 100%;
+  padding: 77px 0 200px 0;
+  box-sizing: border-box;
+  background-image: url("/images/finances-bg@2x-min.jpg");
+  background-color: #141c84;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .finances-titlepage .chapter-title-large {
+    margin-bottom: 0; }
+  .finances-titlepage .chapter-subtitle-xsmall {
+    margin-bottom: 70px; }
+
+.footer {
+  background-color: #141c84; }
+
+.copyright {
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin: 20px 0; }
+
+.footer-logo {
+  display: block;
+  width: 170px;
+  float: left;
+  margin: 20px 0; }
+
+.donation-link {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 89px;
+  background-color: #f98200;
+  float: right;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 11px;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 20px 0; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden; }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none; }
+
+@media only screen and (max-width: 900px) {
+  .col-60, .col-20 {
+    width: 100%; }
+  .footer-logo {
+    float: left; }
+  .col-20:after {
+    content: "";
+    display: table;
+    clear: both; } }
+
 @media only screen and (max-width: 768px) {
   html, body {
     font-size: 14px; }
-  .col-1_2, .col-1_3, .col-2_3, .col-impact-1_2 {
+  .col-1_2, .col-1_3, .col-2_3, .col-impact-1_2, .col-leadership-1_3, .col-45 {
     width: 100%; }
-  .col-right-space, .col-impact-right-space {
+  .col-right-space, .col-impact-right-space, .col-leadership-right-space, .col-45-right-space {
     margin-right: 0; }
   .row-default {
     padding: 0 15px; }
@@ -623,7 +1028,9 @@ button {
     margin: 0 auto 40px auto; }
     .development-part-03 .section-nav .btn-scroll img {
       width: 38px;
-      height: 38px; } }
+      height: 38px; }
+  .finances-piechart {
+    margin: 30px auto 0 auto; } }
 
 @media only screen and (max-width: 650px) {
   .intro-part .slogan img {

@@ -58,8 +58,16 @@ body, html {
     color: $lightblue-400;
 }
 
+.text-lightblue-450 {
+    color: $lightblue-450;
+}
+
 .text-lightblue-500 {
     color: $lightblue-500;
+}
+
+.text-teal-300 {
+    color: $teal-300;
 }
 
 .text-white {
@@ -122,7 +130,6 @@ body, html {
     font-weight: 300;
     line-height: 1.2em;
     text-align: center;
-    color: $lightblue-500;
 }
 
 .chapter-title-medium {
@@ -168,4 +175,12 @@ body, html {
     font-weight: 300;
     text-align: center;
     color: $cyan-400;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
