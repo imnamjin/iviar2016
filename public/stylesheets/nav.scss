@@ -1,7 +1,11 @@
 .global-nav {
     background-color: $blue-400;
+    z-index: 100;
 
-    .row-default {
+    .row-nav {
+        max-width: 1140px;
+        margin: 0 auto;
+        background: #005cac;
         border: 1px solid $blue-500;
         box-sizing: border-box;
         padding: 0;
@@ -10,35 +14,166 @@
     .menu-bar {
         width: 100%;
         font-size: 15px;
+        height: 78px;
+        position: relative;
     }
 
-    .menu {
+    .menu-01 {
         display: block;
-        float: left;
-        width: 12.8%;
+        position: absolute;
+        left: 0;
+        width: 145px;
         height: 78px;
-        background: url('/images/menu-bg.png');
+        background: url('/images/menu-bg-01.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-color: $blue-400;
         padding-left: 12px;
+        padding-right: 24px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-02 {
+        display: block;
+        position: absolute;
+        left: 125px;
+        width: 166px;
+        height: 78px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
         padding-right: 12px;
         box-sizing: border-box;
         text-decoration: none;
         color: $white;
     }
 
-    .menu-last {
+    .menu-03 {
         display: block;
-        float: left;
-        width: 10.4%;
+        position: absolute;
+        left: 271px;
+        width: 166px;
         height: 78px;
-        background-color: $blue-400;
-        padding-left: 12px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
         padding-right: 12px;
         box-sizing: border-box;
         text-decoration: none;
         color: $white;
+    }
+
+    .menu-04 {
+        display: block;
+        position: absolute;
+        left: 417px;
+        width: 166px;
+        height: 78px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-05 {
+        display: block;
+        position: absolute;
+        left: 563px;
+        width: 166px;
+        height: 78px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-06 {
+        display: block;
+        position: absolute;
+        left: 709px;
+        width: 166px;
+        height: 78px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-07 {
+        display: block;
+        position: absolute;
+        left: 855px;
+        width: 166px;
+        height: 78px;
+        background: url('/images/menu-bg-02.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-08 {
+        display: block;
+        position: absolute;
+        left: 1001px;
+        width: 137px;
+        height: 78px;
+        background: url('/images/menu-bg-03.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 12px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $white;
+    }
+
+    .menu-01:hover, .menu-01:active {
+        background: none;
+    }
+
+    .menu-02:hover, .menu-02:active, 
+    .menu-03:hover, .menu-03:active, 
+    .menu-04:hover, .menu-04:active, 
+    .menu-05:hover, .menu-05:active, 
+    .menu-06:hover, .menu-06:active, 
+    .menu-07:hover, .menu-07:active {
+        background: none;
+    }
+
+    .menu-08:hover, .menu-08:active {
+        background: none;
     }
 }
 
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

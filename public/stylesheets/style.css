@@ -637,39 +637,155 @@ body, html {
   text-align: right; }
 
 .global-nav {
-  background-color: #047ce4; }
-  .global-nav .row-default {
+  background-color: #047ce4;
+  z-index: 100; }
+  .global-nav .row-nav {
+    max-width: 1140px;
+    margin: 0 auto;
+    background: #005cac;
     border: 1px solid #006ac7;
     box-sizing: border-box;
     padding: 0; }
   .global-nav .menu-bar {
     width: 100%;
-    font-size: 15px; }
-  .global-nav .menu {
-    display: block;
-    float: left;
-    width: 12.8%;
+    font-size: 15px;
     height: 78px;
-    background: url("/images/menu-bg.png");
+    position: relative; }
+  .global-nav .menu-01 {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 145px;
+    height: 78px;
+    background: url("/images/menu-bg-01.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #047ce4;
     padding-left: 12px;
-    padding-right: 12px;
+    padding-right: 24px;
     box-sizing: border-box;
     text-decoration: none;
     color: #ffffff; }
-  .global-nav .menu-last {
+  .global-nav .menu-02 {
     display: block;
-    float: left;
-    width: 10.4%;
+    position: absolute;
+    left: 125px;
+    width: 166px;
     height: 78px;
-    background-color: #047ce4;
-    padding-left: 12px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
     padding-right: 12px;
     box-sizing: border-box;
     text-decoration: none;
     color: #ffffff; }
+  .global-nav .menu-03 {
+    display: block;
+    position: absolute;
+    left: 271px;
+    width: 166px;
+    height: 78px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-04 {
+    display: block;
+    position: absolute;
+    left: 417px;
+    width: 166px;
+    height: 78px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-05 {
+    display: block;
+    position: absolute;
+    left: 563px;
+    width: 166px;
+    height: 78px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-06 {
+    display: block;
+    position: absolute;
+    left: 709px;
+    width: 166px;
+    height: 78px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-07 {
+    display: block;
+    position: absolute;
+    left: 855px;
+    width: 166px;
+    height: 78px;
+    background: url("/images/menu-bg-02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-08 {
+    display: block;
+    position: absolute;
+    left: 1001px;
+    width: 137px;
+    height: 78px;
+    background: url("/images/menu-bg-03.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff; }
+  .global-nav .menu-01:hover, .global-nav .menu-01:active {
+    background: none; }
+  .global-nav .menu-02:hover, .global-nav .menu-02:active,
+  .global-nav .menu-03:hover, .global-nav .menu-03:active,
+  .global-nav .menu-04:hover, .global-nav .menu-04:active,
+  .global-nav .menu-05:hover, .global-nav .menu-05:active,
+  .global-nav .menu-06:hover, .global-nav .menu-06:active,
+  .global-nav .menu-07:hover, .global-nav .menu-07:active {
+    background: none; }
+  .global-nav .menu-08:hover, .global-nav .menu-08:active {
+    background: none; }
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.nav-absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 body, html {
   height: 100%; }
@@ -699,7 +815,7 @@ button {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 40px;
+    bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     width: 59px;
