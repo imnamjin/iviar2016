@@ -458,6 +458,21 @@ button {
 
 
 
+
+
+
+@media only screen and (max-width: 1140px) {
+    .global-nav {
+        display: none;
+    }
+
+    .intro-part {
+        .btn-scroll {
+            bottom: 40px;
+        }
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .col-60, .col-20 {
         width: 100%;

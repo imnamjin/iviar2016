@@ -15,26 +15,67 @@
         <div class="slogan">
             <img src="/images/intro-title@2x-min.png" alt="slogan">
         </div>
-        <button type="button" class="btn-scroll">
+        <a class="btn-scroll" href="#annual-letter-position">
             <img src="/images/btn-move-scroll@2x-min.png" alt="scroll">
-        </button>
+        </a>
     </div>
     <nav class="global-nav nav-absolute">
         <div class="row-nav">
             <div class="menu-bar">
-                <a href="#" class="menu-01 padding-top-23px">Annual Letter</a>
-                <a href="#" class="menu-02 padding-top-13px">Development <br>& Delivery</a>
-                <a href="#" class="menu-03 padding-top-13px">Capacity <br>Building</a>
-                <a href="#" class="menu-04 padding-top-23px">Impact</a>
-                <a href="#" class="menu-05 padding-top-23px">Partners</a>
-                <a href="#" class="menu-06 padding-top-23px">Our Donors</a>
-                <a href="#" class="menu-07 padding-top-23px">Leadership</a>
-                <a href="#" class="menu-08 padding-top-23px">Finances</a>
+                <a href="#annual-letter-position" class="menu-01 padding-top-23px">Annual Letter</a>
+                <a href="#development-delivery-position" class="menu-02 padding-top-13px">Development <br>& Delivery</a>
+                <a href="#capacity-position" class="menu-03 padding-top-13px">Capacity <br>Building</a>
+                <a href="#impact-position" class="menu-04 padding-top-23px">Impact</a>
+                <a href="#partners-position" class="menu-05 padding-top-23px">Partners</a>
+                <a href="#donors-position" class="menu-06 padding-top-23px">Our Donors</a>
+                <a href="#leadership-position" class="menu-07 padding-top-23px">Leadership</a>
+                <a href="#finances-position" class="menu-08 padding-top-23px">Finances</a>
             </div>
         </div>
     </nav>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                header = $(".global-nav"),
+                h = document.body.clientHeight;
+
+            if (y >= h - 80) {
+                header.addClass('nav-fixed');
+                header.removeClass('nav-absolute');
+            } else {
+                header.addClass('nav-absolute');
+                header.removeClass('nav-fixed');
+            }
+        });
+    </script>
+
+    <nav class="mobilenav" id="myMobileTopnav">
+        <a href="#" onclick="myFunction()">IVI Annual Report 2016</a>
+        <a href="#annual-letter-position" onclick="myFunction()">Annual Letter</a>
+        <a href="#development-delivery-position" onclick="myFunction()">Development Delivery</a>
+        <a href="#capacity-position" onclick="myFunction()">Capacity Building</a>
+        <a href="#impact-position" onclick="myFunction()">Impact</a>
+        <a href="#partners-position" onclick="myFunction()">Partners</a>
+        <a href="#donors-position" onclick="myFunction()">Our Donors</a>
+        <a href="#leadership-position" onclick="myFunction()">Leadership</a>
+        <a href="#finances-position" onclick="myFunction()">Finances</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="material-icons">&#xE5D2;</i></a>
+    </nav>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myMobileTopnav");
+            if (x.className === "mobilenav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mobilenav";
+            }
+        }
+    </script>
+
 </header>
-<section class="annual-letter">
+<section class="annual-letter" id="annual-letter-position">
     <div class="row-default row-620px">
         <h2 class="chapter-title-small">
             Discover, develop and deliver safe effective and affordable vaccines  for global public health
@@ -47,7 +88,7 @@
         </button>
     </div>
 </section>
-<section class="development-part-01">
+<section class="development-part-01" id="development-delivery-position">
     <div class="row-default row-735px">
         <h2 class="chapter-title-large text-lightblue-500">
             Vaccine Development & Delivery
@@ -375,7 +416,7 @@
         </div>
     </div>
 </section>
-<section class="capacity-building-titlepage">
+<section class="capacity-building-titlepage" id="capacity-position">
     <div class="row-default row-735px">
         <h2 class="chapter-title-large text-lightblue-400">
             Capacity-building
@@ -470,7 +511,7 @@
         </div>
     </div>
 </div>
-<section class="impact-titlepage">
+<section class="impact-titlepage" id="impact-position">
     <div class="row-default row-920px">
         <h2 class="chapter-title-xlarge text-lightblue-500">
             Impact
@@ -523,7 +564,7 @@
         </p>
     </div>
 </section>
-<section class="partners-titlepage">
+<section class="partners-titlepage" id="partners-position">
     <div class="row-default row-724px">
         <h2 class="chapter-title-large text-teal-300">
             Partners
@@ -536,7 +577,7 @@
         </button>
     </div>
 </section>
-<section class="donors-titlepage">
+<section class="donors-titlepage" id="donors-position">
     <div class="row-default row-724px">
         <h2 class="chapter-title-large text-lightblue-450">
             Our Donors
@@ -570,7 +611,7 @@
         </div>
     </div>
 </section>
-<section class="leadership-titlepage">
+<section class="leadership-titlepage" id="leadership-position">
     <div class="row-default">
         <h2 class="chapter-title-large text-white">
             Leadership
@@ -632,7 +673,7 @@
         </div>
     </div>
 </section>
-<section class="finances-titlepage">
+<section class="finances-titlepage" id="finances-position">
     <div class="row-default row-800px">
         <h2 class="chapter-title-large text-cyan-400">
             Finances
@@ -847,7 +888,6 @@
 
 
 
-
 <script>
         
     $(document).ready(function(){
@@ -877,6 +917,10 @@
             $('html,body').scrollTo(this.hash, this.hash); 
         });
         
+        $(".btn-scroll").click(function(evn){
+            evn.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash); 
+        });
         
         
         /**
