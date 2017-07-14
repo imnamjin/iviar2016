@@ -4,6 +4,9 @@
 @import "component";
 @import "typography";
 @import "nav";
+@import "modal";
+
+body {-webkit-text-size-adjust: none;}
 
 body, html {
     height: 100%;
@@ -465,6 +468,7 @@ button:focus {
 
 
 
+
 @media only screen and (max-width: 1140px) {
     .global-nav {
         display: none;
@@ -601,47 +605,38 @@ button:focus {
         .logo-area {
             .ivi-logo {
                 clear: both;
+                
+                img {
+                    width: 200px;
+                }
             }
 
             .impact-20-logo {
                 float: left;
                 clear: both;
+
+                img {
+                    width: 74.4px;
+                }
             }
         }
 
         .slogan {
-            top: 47.5%;
-        }
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .intro-part {
-
-        .logo-area {
-
-            .ivi-logo img {
-                width: 200px;
-                height: auto;
-            }
-
-            .impact-20-logo img {
-                width: 74.4px;
-                height: auto;
-            }
+            top: 49%;
         }
 
         .slogan img {
-            width: 280px;
+            width: 270px;
         }
 
         .btn-scroll {
-            width: 47.2px;
+            width: 44px;
 
             img {
-                width: 47.2px;
+                width: 44px;
                 height: auto;
             }
-        }
+        }        
     }
 }
+

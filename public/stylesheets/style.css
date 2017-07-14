@@ -804,7 +804,7 @@ body, html {
   right: 0; }
 
 .nav-active {
-  color: red; }
+  background: none; }
 
 .mobilenav {
   display: none;
@@ -880,6 +880,75 @@ body, html {
 
 .mobilenav.responsive a:not(:first-child):hover {
   background-color: #00649f; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999999;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  overflow-y: auto; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+.annual-letter-content {
+  color: #333333;
+  font-size: 0.875rem; }
+
+.modal-quote {
+  font-size: 1.125rem;
+  color: #2071ff;
+  font-weight: 300;
+  font-style: italic; }
+
+.signature-part {
+  margin-top: 20px;
+  text-align: right; }
+  .signature-part .sincerely {
+    margin-bottom: 10px; }
+  .signature-part .signature-img img {
+    width: 200px; }
+  .signature-part .signature-name {
+    margin-top: -30px; }
+
+body {
+  -webkit-text-size-adjust: none; }
 
 body, html {
   height: 100%; }
@@ -1205,6 +1274,10 @@ button:focus {
 .topnav .icon {
   display: none; }
 
+@media screen and (orientation: landscape) {
+  .intro-part .slogan img {
+    display: none; } }
+
 @media only screen and (max-width: 1140px) {
   .global-nav {
     display: none; }
@@ -1272,25 +1345,21 @@ button:focus {
     width: 65%; }
   .intro-part .logo-area .ivi-logo {
     clear: both; }
+    .intro-part .logo-area .ivi-logo img {
+      width: 200px; }
   .intro-part .logo-area .impact-20-logo {
     float: left;
     clear: both; }
+    .intro-part .logo-area .impact-20-logo img {
+      width: 74.4px; }
   .intro-part .slogan {
-    top: 47.5%; } }
-
-@media only screen and (max-width: 320px) {
-  .intro-part .logo-area .ivi-logo img {
-    width: 200px;
-    height: auto; }
-  .intro-part .logo-area .impact-20-logo img {
-    width: 74.4px;
-    height: auto; }
+    top: 49%; }
   .intro-part .slogan img {
-    width: 280px; }
+    width: 270px; }
   .intro-part .btn-scroll {
-    width: 47.2px; }
+    width: 44px; }
     .intro-part .btn-scroll img {
-      width: 47.2px;
+      width: 44px;
       height: auto; } }
 
 /*# sourceMappingURL=style.css.map */

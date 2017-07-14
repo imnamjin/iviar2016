@@ -19,7 +19,7 @@
             <img src="/images/btn-move-scroll@2x-min.png" alt="scroll">
         </a>
     </div>
-    <nav class="global-nav nav-absolute">
+    <nav class="global-nav nav-absolute" id="pc-menu">
         <div class="row-nav">
             <div class="menu-bar">
                 <a href="#annual-letter-position" class="menu-01 padding-top-23px">Annual Letter</a>
@@ -33,6 +33,12 @@
             </div>
         </div>
     </nav>
+
+    <script>
+        $(document).scroll(function() {
+            console.log($(document).scrollTop());
+        })
+    </script>
 
     <script>
         $(document).scroll(function () {
@@ -49,6 +55,119 @@
             }
         });
     </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-01"),
+                h = document.body.clientHeight;
+
+            if (h + 240 > y && y > 0) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-02"),
+                h = document.body.clientHeight;
+
+            if (h + 9048 > y && y >= h + 240) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-03"),
+                h = document.body.clientHeight;
+
+            if (h + 11688 > y && y >= h + 9048) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-04"),
+                h = document.body.clientHeight;
+
+            if (h + 13024 > y && y >= h + 11688) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-05"),
+                h = document.body.clientHeight;
+
+            if (h + 13513 > y && y >= h + 13024) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-06"),
+                h = document.body.clientHeight;
+
+            if (h + 14810 > y && y >= h + 13513) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-07"),
+                h = document.body.clientHeight;
+
+            if (h + 15950 > y && y >= h + 14810) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).scroll(function () {
+            var y = $(document).scrollTop(),
+                menu = $(".menu-08"),
+                h = document.body.clientHeight;
+
+            if (y >= h + 15950) {
+                menu.addClass('nav-active');
+            } else {
+                menu.removeClass('nav-active');
+            }
+        });
+    </script>
+    
 
     <nav class="mobilenav" id="myMobileTopnav">
         <a href="#">IVI Annual Report 2016</a>
@@ -83,11 +202,75 @@
         <div class="chapter-link-caption">
             Dear Friends,
         </div>
-        <button type="button" class="btn-basic">
+        <button type="button" id="modalBtn" class="btn-basic">
             <i class="material-icons">&#xE151;</i> Annual Letter
         </button>
     </div>
 </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><i class="material-icons">&#xE14C;</i></span>
+    <p class="annual-letter-content">
+        Dear Friends,<br>
+        <br>
+        The first international organizational exclusively dedicated to making vaccines available for developing countries was established in Seoul, South Korea in October 1997.  Twenty years later, IVI continues to hold true to its original mandate.  <br>
+        <br>
+        <span class="modal-quote">“We brought to market the first affordable oral cholera vaccine…and We are among the few PDPs to successfully develop a vaccine from the bench to licensure and WHO prequalification.”</span><br>
+        <br>
+        As IVI’s third Director General, I’m proud of our past achievements. We brought to market the first affordable oral cholera vaccine and changed the supply-demand dynamics for the vaccine.  We also established the product development partnership (PDP) model in Asia and made partnerships with several Asian manufacturers to develop vaccines of public health importance to the region and the world. We are among the few PDPs to successfully develop a vaccine from the bench to licensure and WHO prequalification. <br>
+        <br>
+        In 2017, we celebrate IVI’s twentieth anniversary and reflect on our contributions to global health. I will ensure that we continue to fulfill our mission in the next phase of IVI’s evolution. The seeds were set in 2016 when we re-assessed our strategy and capabilities in order to strengthen IVI’s sustainability. <br>
+        <br>
+        We increased our scientific leadership capacity through new hires such as a Deputy Director General of Development & Delivery and Program Director of Delivery. Three new members were added to our Board that include a former ambassador from Korea, chief medical officer from the Finnish National Institute for Health and Welfare, and director general from the Korean Centers for Disease Control and Prevention. After a two-year hiatus, our Scientific Advisory Group was re-launched in October 2016.<br>
+        <br>
+        We strengthened relations with our stakeholders, Korea and India. IVI began a relationship with the Korean Ministry of Health & Welfare (MOHW), signifying a new turn in the institute’s relations with our host country. Formerly under the oversight of Ministry of Education, IVI was transferred to MOHW in 2016 and this transfer is expected to increase cooperation between IVI and Korea on vaccine research and public health initiatives. India recently agreed to become a financially contributing member state and it will be the third member state to provide annual funding to IVI in addition to Korea and Sweden.<br>
+        <br>
+        As you will see in the report, we made considerable progress in our cholera, typhoid, dengue and MERS-CoV programs in 2016. New vaccine development projects are in the pipeline such as inactivated rotavirus, human papillomavirus (HPV), hepatitis E, EV71 (hand, foot and mouth disease), and group A Streptococcus vaccines. <br>
+        <br>
+        In closing, we are excited about IVI’s next 20 years and our future direction. None of this would be possible without our friends and supporters.  In particularly, I would like to thank the Bill & Melinda Gates Foundation and the governments of Sweden and Republic of Korea for their commitment to IVI. I also would like to thank the Korea Support Committee for IVI (KSC) and our many partners and collaborators.
+    </p>
+    <div class="signature-part annual-letter-content">
+        <div class="sincerely">Sincerely,</div>
+        <div class="signature-img"><img src="/images/signature.png" alt="signature"></div>
+        <div class="signature-name">Jerome H. Kim, MD</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("modalBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 <section class="development-part-01" id="development-delivery-position">
     <div class="row-default row-735px">
         <h2 class="chapter-title-large text-lightblue-500">
@@ -891,23 +1074,6 @@
 <script>
         
     $(document).ready(function(){
-        
-        /** 
-         * This part does the "fixed navigation after scroll" functionality
-         * We use the jQuery function scroll() to recalculate our variables as the 
-         * page is scrolled/
-         */
-        $(window).scroll(function(){
-            var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
-            var div_top = $('#nav-anchor').offset().top;
-                if (window_top > div_top) {
-                    $('nav').addClass('stick');
-                } else {
-                    $('nav').removeClass('stick');
-                }
-        });
-        
-        
         /**
          * This part causes smooth scrolling using scrollto.js
          * We target all a tags inside the nav, and apply the scrollto.js to it.
@@ -920,45 +1086,6 @@
         $(".btn-scroll").click(function(evn){
             evn.preventDefault();
             $('html,body').scrollTo(this.hash, this.hash); 
-        });
-        
-        
-        /**
-         * This part handles the highlighting functionality.
-         * We use the scroll functionality again, some array creation and 
-         * manipulation, class adding and class removing, and conditional testing
-         */
-        var aChildren = $("nav li").children(); // find the a children of the list items
-        var aArray = []; // create the empty aArray
-        for (var i=0; i < aChildren.length; i++) {    
-            var aChild = aChildren[i];
-            var ahref = $(aChild).attr('href');
-            aArray.push(ahref);
-        } // this for loop fills the aArray with attribute href values
-        
-        $(window).scroll(function(){
-            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-            var windowHeight = $(window).height(); // get the height of the window
-            var docHeight = $(document).height();
-            
-            for (var i=0; i < aArray.length; i++) {
-                var theID = aArray[i];
-                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-                var divHeight = $(theID).height(); // get the height of the div in question
-                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                    $("a[href='" + theID + "']").addClass("nav-active");
-                } else {
-                    $("a[href='" + theID + "']").removeClass("nav-active");
-                }
-            }
-            
-            if(windowPos + windowHeight == docHeight) {
-                if (!$("nav li:last-child a").hasClass("nav-active")) {
-                    var navActiveCurrent = $(".nav-active").attr("href");
-                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                    $("nav li:last-child a").addClass("nav-active");
-                }
-            }
         });
     });
 
