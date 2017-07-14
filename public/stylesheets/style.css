@@ -66,6 +66,15 @@ table {
 .row-920px {
   max-width: 920px; }
 
+.width-115 {
+  width: 7.1875rem; }
+
+.width-190 {
+  width: 11.875rem; }
+
+.width-320 {
+  width: 20rem; }
+
 .col-1_2 {
   width: 48.64%;
   float: left; }
@@ -261,6 +270,11 @@ table {
     margin-right: 5px;
     font-size: 1.125rem;
     vertical-align: middle; }
+
+.btn-link {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none; }
 
 .number-box {
   background: #ffffff;
@@ -793,21 +807,43 @@ body, html {
   color: red; }
 
 .mobilenav {
+  display: none;
   overflow: hidden;
-  background-color: #00a3fe; }
+  background-color: #00a3fe;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .mobilenav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 19px 16px 10px 16px;
   text-decoration: none;
-  font-size: 17px; }
+  font-size: 1rem; }
 
-.mobilenav a:hover {
-  background-color: #008bd9;
-  color: black; }
+.mobilenav button {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px 16px 10px 16px;
+  text-decoration: none; }
+
+.mobilenav button:focus {
+  outline: 0; }
+
+.mobilenav button:hover {
+  background-color: #008bd9; }
+
+.mobilenav button:active {
+  background-color: #008bd9; }
+
+.mobilenav a:not(:first-child):hover {
+  background-color: #008bd9; }
 
 .mobilenav .icon {
   display: none; }
@@ -815,12 +851,19 @@ body, html {
 .mobilenav a:not(:first-child) {
   display: none; }
 
-.mobilenav a.icon {
+.mobilenav a, .mobilenav button {
+  height: 59px;
+  box-sizing: border-box; }
+
+.mobilenav .icon {
   float: right;
   display: block; }
 
 .mobilenav.responsive {
-  position: relative; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .mobilenav.responsive .icon {
   position: absolute;
@@ -836,7 +879,7 @@ body, html {
   background-color: #008bd9; }
 
 .mobilenav.responsive a:not(:first-child):hover {
-  background-color: #00436d; }
+  background-color: #00649f; }
 
 body, html {
   height: 100%; }
@@ -846,6 +889,9 @@ button {
   background: transparent;
   padding: 0;
   margin: 0; }
+
+button:focus {
+  outline: 0; }
 
 .intro-part {
   width: 100%;
@@ -858,7 +904,7 @@ button {
   background-repeat: no-repeat; }
   .intro-part .slogan {
     position: absolute;
-    top: 42%; }
+    top: 40%; }
     .intro-part .slogan img {
       width: 488px;
       height: auto; }
@@ -1163,7 +1209,11 @@ button {
   .global-nav {
     display: none; }
   .intro-part .btn-scroll {
-    bottom: 40px; } }
+    bottom: 40px; }
+  .intro-part .logo-area {
+    padding-top: 80px; }
+  .mobilenav {
+    display: block; } }
 
 @media only screen and (max-width: 900px) {
   .col-60, .col-20 {
@@ -1215,7 +1265,7 @@ button {
 
 @media only screen and (max-width: 500px) {
   .intro-part .slogan img {
-    width: 300px; } }
+    width: 320px; } }
 
 @media only screen and (max-width: 450px) {
   .disease-main-img {
@@ -1224,7 +1274,9 @@ button {
     clear: both; }
   .intro-part .logo-area .impact-20-logo {
     float: left;
-    clear: both; } }
+    clear: both; }
+  .intro-part .slogan {
+    top: 47.5%; } }
 
 @media only screen and (max-width: 320px) {
   .intro-part .logo-area .ivi-logo img {
@@ -1233,12 +1285,12 @@ button {
   .intro-part .logo-area .impact-20-logo img {
     width: 74.4px;
     height: auto; }
+  .intro-part .slogan img {
+    width: 280px; }
   .intro-part .btn-scroll {
     width: 47.2px; }
     .intro-part .btn-scroll img {
       width: 47.2px;
-      height: auto; }
-  .intro-part .slogan img {
-    width: 250px; } }
+      height: auto; } }
 
 /*# sourceMappingURL=style.css.map */

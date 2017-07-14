@@ -194,8 +194,14 @@
 
 
 .mobilenav {
-  overflow: hidden;
-  background-color: $deepblue-300;
+    display: none;
+    overflow: hidden;
+    background-color: $deepblue-300;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .mobilenav a {
@@ -203,14 +209,34 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 19px 16px 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: $ft-size-1;
 }
 
-.mobilenav a:hover {
+.mobilenav button {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px 16px 10px 16px;
+  text-decoration: none;
+}
+
+.mobilenav button:focus {
+    outline:0;
+}
+
+.mobilenav button:hover {
+    background-color: $deepblue-500;
+}
+
+.mobilenav button:active {
+    background-color: $deepblue-500;
+}
+
+.mobilenav a:not(:first-child):hover {
   background-color: $deepblue-500;
-  color: black;
 }
 
 .mobilenav .icon {
@@ -221,13 +247,21 @@
     display: none;
 }
 
-.mobilenav a.icon {
+.mobilenav a, .mobilenav button{
+    height: 59px;
+    box-sizing: border-box;
+}
+
+.mobilenav .icon {
     float: right;
     display: block;
 }
 
 .mobilenav.responsive {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .mobilenav.responsive .icon {
@@ -247,5 +281,6 @@
 }
 
 .mobilenav.responsive a:not(:first-child):hover {
-    background-color: $deepblue-700;
+    background-color: $deepblue-600;
 }
+

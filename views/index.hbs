@@ -51,7 +51,7 @@
     </script>
 
     <nav class="mobilenav" id="myMobileTopnav">
-        <a href="#" onclick="myFunction()">IVI Annual Report 2016</a>
+        <a href="#">IVI Annual Report 2016</a>
         <a href="#annual-letter-position" onclick="myFunction()">Annual Letter</a>
         <a href="#development-delivery-position" onclick="myFunction()">Development Delivery</a>
         <a href="#capacity-position" onclick="myFunction()">Capacity Building</a>
@@ -60,7 +60,7 @@
         <a href="#donors-position" onclick="myFunction()">Our Donors</a>
         <a href="#leadership-position" onclick="myFunction()">Leadership</a>
         <a href="#finances-position" onclick="myFunction()">Finances</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="material-icons">&#xE5D2;</i></a>
+        <button style="font-size:15px;" class="icon" onclick="myFunction()"><i class="material-icons">&#xE5D2;</i></button>
     </nav>
 
     <script>
@@ -97,11 +97,11 @@
             Making vaccines available and accessible for the world because everyone has the right to good health
         </h3>
     </div>
-    <button type="button" class="btn-scroll">
+    <a href="#development-delivery-content-position" class="btn-scroll">
         <img src="/images/btn-move-seetheimpact@2x-min.png" alt="scroll">
-    </button>
+    </a>
 </section>
-<div class="development-part-02">
+<div class="development-part-02" id="development-delivery-content-position">
     <div class="row-default">
         <p class="content text-cyan-400">We develop vaccines against infectious diseases that are of global health concern (e.g., MERS, Zika) and that affect developing countries (e.g., cholera, typhoid, dengue). Vaccine development and commercialization can be costly, lengthy and fraught with risk, and there are few incentives for companies to pursue development of a vaccine against a neglected disease and/or with a limited market.<br>  
         <br>
@@ -143,9 +143,9 @@
                     <p class="disease-nav-desc">
                         We accelerate the development and delivery of oral cholera vaccines against epidemic and endemic cholera.
                     </p>
-                    <button type="button" class="btn-scroll">
+                    <a href="#cholera-position" class="btn-scroll">
                         <img src="/images/btn-move-roundarrow@2x-min.png" alt="move-button">
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="colincol-1_2">
@@ -155,9 +155,9 @@
                     <p class="disease-nav-desc">
                         We accelerate the development and delivery of new-generation typhoid conjugate vaccines.
                     </p>
-                    <button type="button" class="btn-scroll">
+                    <a href="#typhoid-position" class="btn-scroll">
                         <img src="/images/btn-move-roundarrow@2x-min.png" alt="move-button">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -169,9 +169,9 @@
                     <p class="disease-nav-desc">
                         We promote research and development of prevention and control measures against dengue and other Aedes-transmitted diseases.
                     </p>
-                    <button type="button" class="btn-scroll">
+                    <a href="#dengue-position" class="btn-scroll">
                         <img src="/images/btn-move-roundarrow@2x-min.png" alt="move-button">
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="colincol-1_2">
@@ -181,15 +181,15 @@
                     <p class="disease-nav-desc">
                         We accelerate the development of MERS vaccines.
                     </p>
-                    <button type="button" class="btn-scroll">
+                    <a href="#mers-position" class="btn-scroll">
                         <img src="/images/btn-move-roundarrow@2x-min.png" alt="move-button">
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<section class="disease-part bg-lightgrey">
+<section class="disease-part bg-lightgrey" id="cholera-position">
     <div class="row-default">
         <div class="col-1_3 col-right-space">
             <img src="/images/cholera-img-01@2x-min.png" alt="cholera-img" class="disease-main-img">
@@ -261,7 +261,7 @@
                 We continue to work on the oral cholera vaccine. A thimerosal-free version of Euvichol® was WHO-prequalified in September 2016. In addition to removing thimerosal from the vaccine, production capacity was scaled up to 25 million doses per year through a new 600-liter fermenter. Even though Euvichol® was prequalified in 2015, these modifications required a second approval by the WHO Prequalification Program.
             </p>
             <p class="disease-content">
-                We also work on optimizing vaccine use. The oral cholera vaccine is administered in two doses over a 14-day interval however a single-dose regimen would be advantageous for outbreaks, refugee camps and other emergency situations. IVI is partnering with icddr,b on a single-dose study in Bangladesh. Subjects were followed up six months after vaccination, showing <a href="#" target="_blank" class="text-link">the single dose is mildly protective for all cholera cases while more protective for severe cholera</a>. Follow-ups will continue to be made at 12 months, 18 months and 24 months.
+                We also work on optimizing vaccine use. The oral cholera vaccine is administered in two doses over a 14-day interval however a single-dose regimen would be advantageous for outbreaks, refugee camps and other emergency situations. IVI is partnering with icddr,b on a single-dose study in Bangladesh. Subjects were followed up six months after vaccination, showing <a href="http://www.nejm.org/doi/10.1056/NEJMoa1510330" target="_blank" class="text-link">the single dose is mildly protective for all cholera cases while more protective for severe cholera</a>. Follow-ups will continue to be made at 12 months, 18 months and 24 months.
             </p>
         </div>
     </div>
@@ -295,7 +295,7 @@
         </p>
     </div>
 </section>
-<section class="disease-part">
+<section class="disease-part" id="typhoid-position">
     <div class="row-default">
         <div class="col-1_3 col-right-space">
             <img src="/images/typhoid-img-01@2x-min.png" alt="typhoid-img" class="disease-main-img">
@@ -350,12 +350,12 @@
             <p class="disease-content">
                 We conduct epidemiologic and socio-economic research of typhoid in Africa in order to close the knowledge gap on disease burden in the continent. While typhoid is recognized as a public health problem in Asia and Africa, information on its true burden is lacking, making it difficult to justify vaccination policy and to assess the impact of typhoid vaccination. <br>
                 <br>
-                From 2011 to 2015, we conducted the <a href="#" target="_blank" class="text-link">Typhoid Fever Surveillance in Africa Program (TSAP)</a>, which evaluated the typhoid burden through standardized surveillance at 13 sites in 10 sub-Saharan African countries. One of the major findings of TSAP is confirmation that enteric fever caused by <a href="#" target="_blank" class="text-link">S. Typhi and non-typhoidal Salmonella is a significant problem in Africa</a>. IVI launched a follow-on study, Severe Typhoid in Africa (SETA) in 2016 to assess severe disease outcomes of invasive Salmonella infections and its economic burden at several sites in Africa.
+                From 2011 to 2015, we conducted the <a href="https://academic.oup.com/cid/issue/62/suppl_1" target="_blank" class="text-link">Typhoid Fever Surveillance in Africa Program (TSAP)</a>, which evaluated the typhoid burden through standardized surveillance at 13 sites in 10 sub-Saharan African countries. One of the major findings of TSAP is confirmation that enteric fever caused by <a href="http://thelancet.com/journals/langlo/article/PIIS2214-109X(17)30022-0/fulltext" target="_blank" class="text-link">S. Typhi and non-typhoidal Salmonella is a significant problem in Africa</a>. IVI launched a follow-on study, Severe Typhoid in Africa (SETA) in 2016 to assess severe disease outcomes of invasive Salmonella infections and its economic burden at several sites in Africa.
             </p>
         </div>
     </div>
 </section>
-<section class="disease-part bg-less-lightgrey">
+<section class="disease-part bg-less-lightgrey" id="dengue-position">
     <div class="row-default">
         <div class="col-1_3 col-right-space">
             <img src="/images/dengue-img-01@2x-min.png" alt="dengue-img" class="disease-main-img">
@@ -382,9 +382,9 @@
         </div>
         <div class="col-2_3">
             <p class="disease-content">
-                <a href="#" target="_blank" class="text-link">GDAC</a> aims to promote data generation and synthesis, accelerate innovations in research, and support implementation of new and existing tools. Each partner has specific areas of expertise: IVAC focuses on health economics, strategic demand forecasting and vaccine development; Sabin focuses on communications and advocacy; PDC focuses on integration of vaccine and vector control, diagnostics, clinical case management, and pathogenesis. Besides leading the consortium, IVI is responsible for disease burden and epidemiology, laboratory testing, modeling, policy and access, and regulatory issues. <br>
+                <a href="http://www.sabin.org/updates/pressreleases/experts-dengue-control-form-new-alliance-bridge-vaccine-and-vector-approaches" target="_blank" class="text-link">GDAC</a> aims to promote data generation and synthesis, accelerate innovations in research, and support implementation of new and existing tools. Each partner has specific areas of expertise: IVAC focuses on health economics, strategic demand forecasting and vaccine development; Sabin focuses on communications and advocacy; PDC focuses on integration of vaccine and vector control, diagnostics, clinical case management, and pathogenesis. Besides leading the consortium, IVI is responsible for disease burden and epidemiology, laboratory testing, modeling, policy and access, and regulatory issues. <br>
                 <br>
-                <a href="#" target="_blank" class="text-link">GDAC</a> was created in August 2016 by joining the <a href="#" target="_blank" class="text-link">Dengue Vaccine Initiative (DVI)</a> with the <a href="#" target="_blank" class="text-link">Partnership for Dengue Control</a>, with the intent to expand the mission from dengue vaccines to a broader scope encompassing comprehensive prevention and control measures for Aedes-transmitted diseases including dengue, Zika, yellow fever and chikungunya. <br>
+                <a href="#" target="_blank" class="text-link">GDAC</a> was created in August 2016 by joining the <a href="http://www.denguevaccine.org/" target="_blank" class="text-link">Dengue Vaccine Initiative (DVI)</a> with the <a href="https://www.fondation-merieux.org/partnership-for-dengue-control" target="_blank" class="text-link">Partnership for Dengue Control</a>, with the intent to expand the mission from dengue vaccines to a broader scope encompassing comprehensive prevention and control measures for Aedes-transmitted diseases including dengue, Zika, yellow fever and chikungunya. <br>
                 <br>
                 Specific projects by DVI continue to be conducted with support by the Bill & Melinda Gates Foundation. These projects include dengue burden field studies in Africa, Asia and South America, support for national regulatory authorities (NRAs) reviewing dengue vaccine candidates, and convening of dengue prevention board meetings to address key issues in prevention and control of Aedes-transmitted diseases. Other GDAC activities include the development of a centralized database for clinical trials of the U.S. NIH dengue vaccine candidate conducted by sub-licensees of the NIH dengue vaccine. Efforts are being made to obtain additional funding for proposed GDAC activities, with a focus on integrated vaccine/vector control.<br>
                 <br>
@@ -393,7 +393,7 @@
         </div>
     </div>
 </section>
-<section class="disease-part">
+<section class="disease-part" id="mers-position">
     <div class="row-default">
         <div class="col-1_3 col-right-space">
             <img src="/images/mers-img-01@2x-min.png" alt="mers-main-img" class="disease-main-img">
@@ -410,7 +410,7 @@
             <div class="img-caption">
                 In 2016, IVI and GeneOne Life Sciences signed a collaboration and access agreement to support GeneOne’s MERS DNA vaccine candidate.
             </div>
-            <p class="disease-content">z
+            <p class="disease-content">
                 IVI will partner with two vaccine manufacturers on early-stage clinical development of their MERS vaccine candidates by providing technical and financial support, as well as support in project management and coordination.
             </p>
         </div>
@@ -425,11 +425,11 @@
             We help build knowledge in the vaccine spectrum through training, technology transfer, technical assistance, and educational partnerships.
         </h3>
     </div>
-    <button type="button" class="btn-scroll">
+    <a href="#capacity-content-position" class="btn-scroll">
         <img src="/images/btn-move-seetheimpact@2x-min.png" alt="scroll">
-    </button>
+    </a>
 </section>
-<div class="capacity-building-contentpage bg-purple-900">
+<div class="capacity-building-contentpage bg-purple-900" id="capacity-content-position">
     <div class="row-default margin-bottom-20px">
         <div class="col-1_3 col-right-space">
             <div class="card-title-box bg-lightblue-400 border-top-lightblue-200">
@@ -543,9 +543,9 @@
         <div class="chapter-link-caption">
             To see the publications,
         </div>
-        <button type="button" class="btn-basic">
-            <i class="material-icons">&#xE3AA;</i> Annual Letter
-        </button>
+        <a href="http://www.ivi.int/?page_id=13034" target="_blank" class="btn-basic btn-link width-115">
+            <i class="material-icons">&#xE3AA;</i> Click Here
+        </a>
     </div>
 </section>
 <section class="impact-contentpage">
@@ -572,9 +572,9 @@
         <h3 class="chapter-subtitle-large text-white">
             We thank all of our friends and partners. We are grateful for your support, which makes our work possible.
         </h3>
-        <button type="button" class="btn-basic bg-teal-300">
+        <a href="http://www.ivi.int/?page_id=13046" target="_blank" class="btn-basic bg-teal-300 btn-link width-320">
             <i class="material-icons">&#xE545;</i> Learn more and become a supporter
-        </button>
+        </a>
     </div>
 </section>
 <section class="donors-titlepage" id="donors-position">
@@ -583,13 +583,13 @@
             Our Donors
         </h2>
         <h3 class="chapter-subtitle-small text-white">
-            Core funding is provided by the Governments of the Republic of Korea and Sweden. We welcome India who recently became a <a href="#" class="text-link text-lightblue-450">financially contributing member state to IVI.</a><br>
+            Core funding is provided by the Governments of the Republic of Korea and Sweden. We welcome India who recently became a <a href="http://www.ivi.int/?page_id=12463&uid=924&mod=document&pageid=1" target="_blank" class="text-link text-lightblue-450">financially contributing member state to IVI.</a><br>
             <br>
-            Public- and private-sector organizations and individuals also provide support, both monetary and in-kind, for the Institute’s research and programs. Prominent organizations and individuals in Korea also provide support due to efforts of the <a href="#" class="text-link text-lightblue-450">Korea Support Committee for IVI (KSC)</a>. Your generosity is deeply appreciated.
+            Public- and private-sector organizations and individuals also provide support, both monetary and in-kind, for the Institute’s research and programs. Prominent organizations and individuals in Korea also provide support due to efforts of the <a href="http://www.ivisupport.or.kr/" target="_blank" class="text-link text-lightblue-450">Korea Support Committee for IVI (KSC)</a>. Your generosity is deeply appreciated.
         </h3>
-        <button type="button" class="btn-basic bg-lightblue-450">
+        <a href="http://www.ivi.int/?page_id=13055" target="_blank" class="btn-basic bg-lightblue-450 btn-link width-190">
             <i class="material-icons">&#xE3FC;</i> View our donors here
-        </button>
+        </a>
     </div>
 </section>
 <section class="donors-contentpage">
@@ -597,7 +597,7 @@
         <div class="col-1_2 col-right-space">
             <img class="img-box" src="/images/donors-img-01@2x-min.jpg" alt="donors-img-01">
             <div class="img-caption">
-                The Korean Minister of Health & Welfare (right) at IVI in early 2017.  As the first international organization hosted by South Korea, IVI is under the purview of the Ministry of Health & Welfare and <a href="#" class="text-link">collaborates with the ministry on vaccine research and capacity-building initiatives.</a>
+                The Korean Minister of Health & Welfare (right) at IVI in early 2017.  As the first international organization hosted by South Korea, IVI is under the purview of the Ministry of Health & Welfare and <a href="http://www.ivi.int/?page_id=12463&uid=930&mod=document&pageid=1" target="_blank" class="text-link">collaborates with the ministry on vaccine research and capacity-building initiatives.</a>
             </div>
         </div>
         <div class="col-1_2">
@@ -606,7 +606,7 @@
             </h4>
             <p class="content">
                 Established in 1998, the KSC is an independent nonprofit organization that mobilizes support for IVI in South Korea. The Committee consists of prominent leaders from government, industry, and academia in South Korea.<br>
-                <a href="#" class="text-link text-lightblue-450">http://www.ivi.int/ksc</a>
+                <a href="http://www.ivi.int/ksc" target="_blank" class="text-link text-lightblue-450">http://www.ivi.int/ksc</a>
             </p>
         </div>
     </div>
@@ -617,9 +617,9 @@
             Leadership
         </h2>
         <h3 class="chapter-subtitle-small">
-            See the rest of our leadership <a href="#" class="text-link text-purple-900">here</a><br>
-            <a href="#" class="text-link text-purple-900">Our Board of Trustees</a><br>
-            <a href="#" class="text-link text-purple-900">Our Scientific Advisory Group</a>
+            See the rest of our leadership <a href="http://www.ivi.int/?page_id=12685" target="_blank" class="text-link text-purple-900">here</a><br>
+            <a href="http://www.ivi.int/?page_id=12672" target="_blank" class="text-link text-purple-900">Our Board of Trustees</a><br>
+            <a href="http://www.ivi.int/?page_id=12676" target="_blank" class="text-link text-purple-900">Our Scientific Advisory Group</a>
         </h3>
     </div>
     <div class="row-default">
@@ -878,7 +878,7 @@
             <img class="footer-logo" src="/images/footer-ivi-logo@2x-min.png" alt="footer-logo">
         </div>
         <div class="col-20">
-            <a href="#" target="_blank" class="donation-link">
+            <a href="http://www.ivi.int/?page_id=13046" target="_blank" class="donation-link">
                 Give to IVI
             </a>
         </div>
