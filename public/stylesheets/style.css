@@ -161,6 +161,12 @@ table {
 .margin-bottom-100px {
   margin-bottom: 100px; }
 
+.margin-top-20px {
+  margin-top: 20px; }
+
+.margin-top-40px {
+  margin-top: 40px; }
+
 .padding-left-10px {
   padding-left: 10px; }
 
@@ -560,6 +566,22 @@ body, html {
   font-style: italic;
   color: #9b9b9b;
   line-height: 1.36em; }
+
+.annual-letter-title {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.11em;
+  color: #141c84;
+  margin-top: 20px;
+  margin-bottom: 6px; }
+
+.annual-letter-subtitle {
+  font-size: 1.375rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #141c84;
+  line-height: 1.4em;
+  margin-bottom: 40px; }
 
 .disease-section-title {
   font-size: 2.375rem;
@@ -1273,10 +1295,6 @@ button:focus {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none; }
-
-@media screen and (orientation: landscape) {
-  .intro-part .slogan img {
-    display: none; } }
 
 @media only screen and (max-width: 1140px) {
   .global-nav {
